@@ -5,35 +5,79 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Mohammad Febryan Khamim</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="icon" href="favicon.ico">
 </head>
+
 <body>
 
-	<section>
-		<h1>Perkenalan Diri!</h1>
+	<div id="progress-bar"></div>
+
+	<nav>
+		<h3>Khamim</h3>
+		<ul>
+			<li><a href="#about" class="nav-link">Tentang</a></li>
+			<li><a href="#project" class="nav-link">Project</a></li>
+			<li><a href="#contact" class="nav-link">Kontak</a></li>
+		</ul>
+
+		<button id="darkToggle">🌙</button>
+	</nav>
+
+	<section class="hero fade-in">
+		<h1>Mohammad Febryan Khamim</h1>
 
 		<div class="container">
-			<img src="valverde.jpg">
+			<img src="valverde.jpg" loading="lazy">
 
-			<p>Halo semuanya! Perkenalkan nama saya Mohammad Febryan Khamim dan saat ini sedang belajar Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+			<p id="typing"></p>
 		</div>
+
+		<a href="#contact" class="cta">Hubungi Saya</a>
+		<a href="cv.pdf" target="_blank" download class="cta">Download CV</a>
 	</section>
 
-	<section>
+	<section class="fade-in">
+	  <h2>Apa yang Saya Lakukan</h2>
+	  <p>Saya membangun website modern yang responsif, interaktif, dan memiliki pengalaman pengguna yang baik.</p>
+	</section>
+
+	<section id="about" class="fade-in">
 		<h2>Tentang saya</h2>
-		<p>Saya sedang belajar saat ini.</p>
+		<p>Saya adalah mahasiswa Departemen Matematika Institut Teknologi Sepuluh Nopember (ITS) yang saat ini sedang fokus pada Frontend Development, AI Engineer, dan Data Scientist dengan minat pada pembuatan website modern dan interaktif.</p>
 
 		<img src="https://cdns.klimg.com/bola.net/library/upload/24/2026/04/1280x720/fede-valverde_fa5660d.jpg">
 
 		<a href="https://google.com">Kunjungi Google!</a>
 	</section>
 
-	<section>
+	<section id="tech" class="fade-in">
+	  <h2>Tech Stack</h2>
+
+	  <div class="tech-stack">
+	    <span>HTML</span>
+	    <span>CSS</span>
+	    <span>JavaScript</span>
+	  </div>
+	</section>
+
+	<section id="experience" class="fade-in">
+    <h2>Pengalaman</h2>
+
+	    <div class="timeline">
+	        <div class="timeline-item">
+	            <h3>Belajar Web Development</h3>
+	            <p>Mulai belajar HTML, CSS, dan membuat portfolio website.</p>
+	        </div>
+
+	        <div class="timeline-item">
+	            <h3>Belajar Machine Learning</h3>
+	            <p>Mulai eksplorasi AI dan data science.</p>
+	        </div>
+	    </div>
+	</section>
+
+	<section id="skill" class="fade-in">
 		<div>
 			<h2>Skill</h2>
 
@@ -45,8 +89,165 @@
 		</div>
 	</section>
 
-	
+	<section id="project" class="fade-in">
+		<h2>Project</h2>
 
+		<div class="project-container">
+			<div class="project-card">
+
+			    <div class="project-image">
+			        <img src="valverde.jpg" alt="Project">
+			        
+			        <div class="overlay">
+			            <a href="https://portofolio-khamim.vercel.app/" target="_blank">Lihat Project</a>
+			        </div>
+			    </div>
+
+			    <h3>Website Portofolio</h3>
+			    <p>Website pertama saya ini menggunakan HTML dan CSS, responsif dan sudah di-deploy!</p>
+
+			</div>
+
+			<div class="project-card">
+
+			    <div class="project-image">
+			        <img src="valverde.jpg" alt="Project">
+			        
+			        <div class="overlay">
+			            <a href="https://portofolio-khamim.vercel.app/" target="_blank">Lihat Project</a>
+			        </div>
+			    </div>
+
+			    <h3>Project Kedua</h3>
+			    <p>Deskripsi project kedua</p>
+
+			</div>
+
+			<div class="project-card">
+
+			    <div class="project-image">
+			        <img src="valverde.jpg" alt="Project">
+			        
+			        <div class="overlay">
+			            <a href="https://portofolio-khamim.vercel.app/" target="_blank">Lihat Project</a>
+			        </div>
+			    </div>
+
+			    <h3>Project Kedua</h3>
+			    <p>Deskripsi project kedua</p>
+
+			</div>
+	</section>
+
+	<section id="contact">
+		<h2>Kontak</h2>
+			<p>Email : <a href="mailto:mfebkhamim@gmail.com" target="_blank">mfebkhamim@gmail.com</a></p>
+			<p>Instagram : <a href="https://instagram.com/mfkhamim" target="_blank">@mfkhamim</a></p>
+			<p>GitHub: <a href="https://github.com/mfebkhamim" target="_blank">github.com/mfebkhamim</a></p>
+			<p>LinkedIn: <a href="https://www.linkedin.com/in/mohammad-febryan-khamim/" target="_blank">linkedin.com/in/mohammad-febryan-khamim</a></p>
+	</section>
+
+<footer>
+	<p>© 2026 Mohammad Febryan Khamim</p>
+</footer>
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, {
+  threshold: 0.4
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    
+    if (window.scrollY >= sectionTop - 150) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 10) {
+    current = "contact";
+  }
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+</script>
+
+<script>
+const nav = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
+</script>
+
+<script>
+const text = "Frontend Developer & AI Enthusiast — Membangun website interaktif dan modern.";
+let index = 0;
+
+function typeEffect() {
+  if (index < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 50);
+  }
+}
+
+typeEffect();
+</script>
+
+<script>
+const toggle = document.getElementById("darkToggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    toggle.textContent = "☀️";
+  } else {
+    toggle.textContent = "🌙";
+  }
+});
+</script>
+
+<script>
+const progressBar = document.getElementById("progress-bar");
+
+window.addEventListener("scroll", () => {
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+  const scrollPercent = (scrollTop / scrollHeight) * 100;
+
+  progressBar.style.width = scrollPercent + "%";
+});
+</script>
 
 </body>
 </html>
